@@ -1,0 +1,138 @@
+@import "bite";
+
+body{
+
+    font-family: 'Alata', sans-serif;
+    
+
+}
+
+header{
+    padding:2rem 0;
+    color: white;
+    .row{
+        display: flex;
+        align-items: center;
+        img{
+            height:3rem;
+            width: 3rem;
+            border-radius: 10px;
+            .titlelogo{
+                display: flex;;
+                align-items: center;
+                color:white
+                .ok{
+                    text-decoration: none;
+                    font-family: 'Kaushan Script', cursive;
+                    font-size:2rem;
+                    color: white!important;
+                }
+            
+        }
+
+        }
+        ul{
+            margin: 0;
+            padding:0;
+            list-style: none;
+            justify-content: end;;
+            li{
+                margin-right:1rem;;
+                a{
+                    text-decoration: none;
+                    color:white;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+
+main{
+    background-color: lightgrey;
+    h1{
+        color:white;
+        font-size: 2rem;
+        padding:1rem;
+    }
+    .row{
+        display: flex;
+        justify-content:space-between;
+
+        .card{
+            border-radius: 0;
+            max-width: 20%;
+            margin: 1rem;
+            img{
+                border-radius: 0;
+            }
+            .img2{
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-size: cover;
+                border-radius: 50%;
+                padding: 1.3rem;
+            }
+            h5{
+                font-size: 1.5rem;
+                font-weight:bolder;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+            button[id*="shit"]{
+                color: white;
+                border-radius: 50%;
+                background-color: red;
+                border:none
+
+            }
+            button[id*="like"]{
+                color: white;
+                border-radius: 50%;
+                background-color: green;
+                border:none
+
+            }
+            div[id*="votes"]{
+                margin:0 1rem;
+            }
+            
+            
+            
+            
+        }
+    }
+}
+
+.top{
+    .card{
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+@media (max-width: 766px) {
+    main{
+        h1{
+            color:white;
+            font-size: 2rem;
+            padding:1rem;
+        }
+        .row{
+            display: flex;
+            justify-content:center;
+    
+            .card{
+                border-radius: 0;
+                max-width: 100%;
+                margin: 1rem;
+            }
+        
+    }}
+  }

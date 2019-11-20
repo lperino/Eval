@@ -1,0 +1,90 @@
+body {
+  font-family: 'Alata', sans-serif; }
+
+header {
+  padding: 2rem 0;
+  color: white; }
+  header .row {
+    display: flex;
+    align-items: center; }
+    header .row img {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 10px; }
+      header .row img .titlelogo {
+        display: flex;
+        align-items: center; }
+        header .row img .titlelogo a {
+          font-family: 'Kaushan Script', cursive; }
+    header .row ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      justify-content: end; }
+      header .row ul li {
+        margin-right: 1rem; }
+        header .row ul li a {
+          text-decoration: none;
+          color: white;
+          display: inline-block; }
+
+main {
+  background-color: lightgrey; }
+  main h1 {
+    color: white;
+    font-size: 2rem;
+    padding: 1rem; }
+  main .row {
+    display: flex;
+    justify-content: space-between; }
+    main .row .card {
+      border-radius: 0;
+      max-width: 20%;
+      margin: 1rem; }
+      main .row .card img {
+        border-radius: 0; }
+      main .row .card .img2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-size: cover;
+        border-radius: 50%;
+        padding: 1.3rem; }
+      main .row .card h5 {
+        font-size: 1.5rem;
+        font-weight: bolder; }
+      main .row .card p {
+        font-size: 0.8rem; }
+      main .row .card button[id*="shit"] {
+        color: white;
+        border-radius: 50%;
+        background-color: red;
+        border: none; }
+      main .row .card button[id*="like"] {
+        color: white;
+        border-radius: 50%;
+        background-color: green;
+        border: none; }
+      main .row .card div[id*="votes"] {
+        margin: 0 1rem; }
+
+.top .card {
+  max-width: 100%; }
+
+footer {
+  color: white; }
+
+@media (max-width: 766px) {
+  main h1 {
+    color: white;
+    font-size: 2rem;
+    padding: 1rem; }
+  main .row {
+    display: flex;
+    justify-content: center; }
+    main .row .card {
+      border-radius: 0;
+      max-width: 100%;
+      margin: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,5 @@
+- Font: 'Alata' & 'Kaushan Script'
+
+- Ouvrez votre terminal, vous voyez ce petit rectangle qui clignote ? Il doit apparaitre au survol des liens de votre NavBar.
+
+- Pour les haut des "Card": Une seule image utilisé à deux reprise, placé en arrière plan et en arrondi au centre, mais l'image reste identique !
