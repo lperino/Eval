@@ -60,7 +60,7 @@ $(document).ready(function(){
         /****generation du reste du classement */
         else{
             
-            var top=$('<div class="col-12 col-md-3 card p-0 my-0 mx-0">')
+            var top=$('<div class="col-12 col-md-3 card p-0 my-0 mx-2">')
             $('.top').append(top)
             var img = $('<img src="'+x[i].image+'" class="card-img-top p-0" >')
             top.append(img)

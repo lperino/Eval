@@ -21,12 +21,7 @@ header{
                 display: flex;;
                 align-items: center;
                 color:white
-                .ok{
-                    text-decoration: none;
-                    font-family: 'Kaushan Script', cursive;
-                    font-size:2rem;
-                    color: white!important;
-                }
+              
             
         }
 
@@ -107,32 +102,32 @@ main{
     }
 }
 
-.top{
-    .card{
-        max-width: 100%;
-    }
-}
+// .top{
+//     .card{
+//         max-width: 100%;
+//     }
+// }
 
 
 
 
 
-@media (max-width: 766px) {
-    main{
-        h1{
-            color:white;
-            font-size: 2rem;
-            padding:1rem;
-        }
-        .row{
-            display: flex;
-            justify-content:center;
+// @media (max-width: 766px) {
+//     main{
+//         h1{
+//             color:white;
+//             font-size: 2rem;
+//             padding:1rem;
+//         }
+//         .row{
+//             display: flex;
+//             justify-content:center;
     
-            .card{
-                border-radius: 0;
-                max-width: 100%;
-                margin: 1rem;
-            }
+//             .card{
+//                 border-radius: 0;
+//                 max-width: 100%;
+//                 margin: 1rem;
+//             }
         
-    }}
-  }
+//     }}
+//   }
