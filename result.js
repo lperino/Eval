@@ -1,13 +1,13 @@
 $(document).ready(function(){
     
-    
+    /***RECUPERATION SESSION STORAGE */
     var ss = sessionStorage.getItem("imagesIdLike")
     var imagesIdLike = JSON.parse(ss)
     console.log(imagesIdLike);
     
 
     
-    
+    /*****SORTING ALGO triage du plus grand nombres de vote au plus petit */
     function compare(a,b) {
         if (a.votes > b.votes){
            return -1
@@ -17,11 +17,14 @@ $(document).ready(function(){
         }
         return 0;
     }
+    /**liste rangée */
     var x = imagesIdLike.sort(compare)
     console.log(x);
     
-    for (i=0;i<x.length;i++){
 
+    /******génération classement */
+    for (i=0;i<x.length;i++){
+        /****SIMPLE FUNCTION pour différencier les 3 1ers */
        function podium(COULEUR,PLACE){
             var top=$('<div class="col-12 col-md-4 card mx-4 '+COULEUR+'">')
             $('.top').append(top)
@@ -53,6 +56,8 @@ $(document).ready(function(){
             
             podium("bg-danger","3eme")
         }
+
+        /****generation du reste du classement */
         else{
             
             var top=$('<div class="col-12 col-md-3 card p-0 my-0 mx-0">')
@@ -69,6 +74,9 @@ $(document).ready(function(){
             subtCard2.html("Votes= "+x[i].votes)
             var subtCard3 = $('<p class="card-text">')
             subtCard3.html("ID= "+x[i].id)
+                    
+            
+            /***BG 1 CARD SUR 2 */
 
             cardBodyDiv.append(title,subtCard,subtCard2,subtCard3)
             if (i%2!=0){
